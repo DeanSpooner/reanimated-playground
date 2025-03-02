@@ -10,7 +10,9 @@
     "react-native-web": "~0.19.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.3"
+    "@babel/core": "^7.19.3",
+    "@types/react": "~18.3.12",
+    "typescript": "^5.3.3"
   },
   "name": "reanimated-playground",
   "version": "1.0.0",
