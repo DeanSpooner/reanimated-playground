@@ -36,15 +36,10 @@ export default function App() {
   return (
     <View style={{ flex: 1 }}>
       <View style={{ flexDirection: "row" }}>
-        <Animated.View
-          style={[
-            { padding: 10 },
-            buttonStyle(currentFiddle === "colourCircle"),
-          ]}
-        >
+        <Animated.View style={[buttonStyle(currentFiddle === "colourCircle")]}>
           <TouchableOpacity
             style={[
-              { padding: 10 },
+              { padding: 20 },
               buttonStyle(currentFiddle === "colourCircle"),
             ]}
             onPress={() => setCurrentFiddle("colourCircle")}
@@ -56,11 +51,9 @@ export default function App() {
             </Animated.Text>
           </TouchableOpacity>
         </Animated.View>
-        <Animated.View
-          style={[{ padding: 10 }, buttonStyle(currentFiddle === "off")]}
-        >
+        <Animated.View style={[buttonStyle(currentFiddle === "off")]}>
           <TouchableOpacity
-            style={[{ padding: 10 }, buttonStyle(currentFiddle === "off")]}
+            style={[{ padding: 20 }, buttonStyle(currentFiddle === "off")]}
             onPress={() => setCurrentFiddle("off")}
           >
             <Animated.Text style={buttonTextStyle(currentFiddle === "off")}>
